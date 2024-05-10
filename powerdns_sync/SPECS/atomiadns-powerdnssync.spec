@@ -5,7 +5,7 @@
 
 Summary: Atomia DNS PowerDNS Sync application
 Name: atomiadns-powerdnssync
-Version: 1.1.64
+Version: 1.1.65
 Release: 1%{?dist}
 License: Commercial
 Group: System Environment/Daemons
@@ -53,6 +53,7 @@ Atomia DNS PowerDNS Sync application.
 %files
 %defattr(-,root,root,-)
 /usr/bin/atomiapowerdnssync
+/usr/bin/atomiadns-sync-powerdns-database
 /usr/share/atomia/conf/atomiadns.conf.atomiapowerdnssync
 /usr/share/atomia/opendnssec_scripts
 /usr/share/atomia/powerdns.sql
@@ -86,6 +87,8 @@ fi
 exit 0
 
 %changelog
+* Fri May 10 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.65-1
+- Add /usr/bin/atomiadns-sync-powerdns-database on RHEL
 * Fri May 10 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.64-1
 - Add /usr/bin/atomiadns-sync-powerdns-database on RHEL
 * Wed Mar 27 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.63-1
