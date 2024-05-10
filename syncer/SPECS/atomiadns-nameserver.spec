@@ -5,7 +5,7 @@
 
 Summary: Atomia DNS Sync application
 Name: atomiadns-nameserver
-Version: 1.1.63
+Version: 1.1.64
 Release: 1%{?dist}
 License: Commercial
 Group: System Environment/Daemons
@@ -108,6 +108,8 @@ fi
 exit 0
 
 %changelog
+* Fri May 10 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.64-1
+- Add /usr/bin/atomiadns-sync-powerdns-database on RHEL
 * Wed Mar 27 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.63-1
 - Add atomiapowerdnssync update_dnssec_settings
 * Thu Oct 12 2023 Nemanja Zivkovic <nemanja.zivkovic@atomia.com> - 1.1.61-1
