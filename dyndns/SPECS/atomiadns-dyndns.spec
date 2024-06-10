@@ -5,7 +5,7 @@
 
 Summary: Atomia DNS DDNS server
 Name: atomiadns-dyndns
-Version: 1.1.65
+Version: 1.1.66
 Release: 1%{?dist}
 License: Commercial
 Group: System Environment/Daemons
@@ -82,6 +82,8 @@ fi
 exit 0
 
 %changelog
+* Mon Jun 10 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.66-1
+- Update TSIG keys on full reload of slavezones
 * Fri May 10 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.65-1
 - Add /usr/bin/atomiadns-sync-powerdns-database on RHEL
 * Fri May 10 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.64-1

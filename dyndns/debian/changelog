@@ -1,3 +1,9 @@
+atomiadns-dyndns (1.1.66) hardy; urgency=low
+
+  * Update TSIG keys on full reload of slavezones
+
+ -- Jimmy Bergman <jimmy@sigint.se>  Mon, 10 Jun 2024 14:11:18 +0200
+
 atomiadns-dyndns (1.1.65) hardy; urgency=low
 
   * Add /usr/bin/atomiadns-sync-powerdns-database on RHEL
