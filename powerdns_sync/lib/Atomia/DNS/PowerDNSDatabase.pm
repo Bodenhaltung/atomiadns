@@ -454,7 +454,7 @@ sub add_tsig_key {
 	my $tsig_key_name = shift;
 	my $tsig_key_data = shift;
 
-	die "bad input data to add tsig key" unless defined($tsig_key_name) && ref($tsig_key_name) eq "" && $tsig_key_name =~ /^[a-zA-Z0-9_-]*$/ && defined($tsig_key_data) && ref($tsig_key_data) eq "HASH";
+	die "bad input data to add tsig key" unless defined($tsig_key_name) && ref($tsig_key_name) eq "" && $tsig_key_name =~ /^[.a-zA-Z0-9_-]*$/ && defined($tsig_key_data) && ref($tsig_key_data) eq "HASH";
 	die "tsig secret missing" unless defined($tsig_key_data->{"secret"}) && length($tsig_key_data->{"secret"}) > 0;
 	die "algorithm missing" unless defined($tsig_key_data->{"algorithm"}) && length($tsig_key_data->{"algorithm"}) > 0;
 
