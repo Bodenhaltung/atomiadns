@@ -5,7 +5,7 @@
 
 Summary: Atomia DNS Sync application
 Name: atomiadns-nameserver
-Version: 1.1.68
+Version: 1.1.69
 Release: 1%{?dist}
 License: Commercial
 Group: System Environment/Daemons
@@ -108,6 +108,8 @@ fi
 exit 0
 
 %changelog
+* Thu Sep 05 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.69-1
+- Fix verify_zone broken by last release
 * Thu Sep 05 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.68-1
 - Fix TSIG sync when zone/slavezone changes at the same time
 * Thu Sep 05 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.67-1

@@ -1,3 +1,9 @@
+atomiadns-zoneimport (1.1.69) hardy; urgency=low
+
+  * Fix verify_zone broken by last release
+
+ -- Jimmy Bergman <jimmy@sigint.se>  Thu, 5 Sep 2024 15:06:04 +0200
+
 atomiadns-zoneimport (1.1.68) hardy; urgency=low
 
   * Fix TSIG sync when zone/slavezone changes at the same time
