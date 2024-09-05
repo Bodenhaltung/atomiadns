@@ -40,7 +40,7 @@ CREATE TABLE atomiadns_schemaversion (
 	version INT
 );
 
-INSERT INTO atomiadns_schemaversion (version) VALUES (97);
+INSERT INTO atomiadns_schemaversion (version) VALUES (98);
 
 CREATE TABLE allow_zonetransfer (
         id SERIAL PRIMARY KEY NOT NULL,
@@ -299,7 +299,7 @@ BEGIN
 		SELECT nameserver.id, zone.name FROM zone, nameserver WHERE zone.id = zoneid AND nameserver.nameserver_group_id = zone.nameserver_group_id;
 
 		INSERT INTO domainmetadata_change (nameserver_id, domain_id)
-	        SELECT ns.id, md.id || ',' || NEW.name FROM nameserver ns INNER JOIN domainmetadata md ON ns.nameserver_group_id = md.nameserver_group_id WHERE md.kind = 'TSIG-ALLOW-AXFR' AND md.domain_id = zoneid;
+	        SELECT ns.id, md.id || ',' || z.name FROM nameserver ns INNER JOIN domainmetadata md ON ns.nameserver_group_id = md.nameserver_group_id INNER JOIN zone z ON z.id = zoneid WHERE md.kind = 'TSIG-ALLOW-AXFR' AND md.domain_id = zoneid;
 
 		RETURN NEW;
 	END IF;
