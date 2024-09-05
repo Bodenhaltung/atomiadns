@@ -5,7 +5,7 @@
 
 Summary: Complete master SOAP server for Atomia DNS
 Name: atomiadns-masterserver
-Version: 1.1.66
+Version: 1.1.67
 Release: 1%{?dist}
 License: Commercial
 Group: System Environment/Daemons
@@ -18,7 +18,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch: noarch
 
-Requires: atomiadns-api >= 1.1.66 atomiadns-database >= 1.1.66
+Requires: atomiadns-api >= 1.1.67 atomiadns-database >= 1.1.67
 
 %description
 Complete master SOAP server for Atomia DNS
@@ -37,6 +37,8 @@ Complete master SOAP server for Atomia DNS
 %files
 
 %changelog
+* Thu Sep 05 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.67-1
+- Fix TSIG name validation and reload domainmetadata on full reload of slavezones
 * Mon Jun 10 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.66-1
 - Update TSIG keys on full reload of slavezones
 * Fri May 10 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.65-1

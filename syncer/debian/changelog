@@ -1,3 +1,9 @@
+atomiadns-nameserver (1.1.67) hardy; urgency=low
+
+  * Fix TSIG name validation and reload domainmetadata on full reload of slavezones
+
+ -- Jimmy Bergman <jimmy@sigint.se>  Thu, 5 Sep 2024 12:42:50 +0200
+
 atomiadns-nameserver (1.1.66) hardy; urgency=low
 
   * Update TSIG keys on full reload of slavezones

@@ -1,7 +1,7 @@
 use ExtUtils::MakeMaker;
 WriteMakefile(
    'NAME' => 'atomiadyndns',
-   'VERSION' => '1.1.66',
+   'VERSION' => '1.1.67',
    'AUTHOR' => 'Jimmy Bergman <jimmy@atomia.com>',
    'EXE_FILES' => [ 'bin/atomiadyndns' ]
 );
