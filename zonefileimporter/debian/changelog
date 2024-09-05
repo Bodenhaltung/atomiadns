@@ -1,3 +1,9 @@
+atomiadns-zoneimport (1.1.68) hardy; urgency=low
+
+  * Fix TSIG sync when zone/slavezone changes at the same time
+
+ -- Jimmy Bergman <jimmy@sigint.se>  Thu, 5 Sep 2024 14:48:08 +0200
+
 atomiadns-zoneimport (1.1.67) hardy; urgency=low
 
   * Fix TSIG name validation and reload domainmetadata on full reload of slavezones

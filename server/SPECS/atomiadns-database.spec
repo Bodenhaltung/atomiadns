@@ -5,7 +5,7 @@
 
 Summary: Database schema for Atomia DNS
 Name: atomiadns-database
-Version: 1.1.67
+Version: 1.1.68
 Release: 1%{?dist}
 License: Commercial
 Group: System Environment/Daemons
@@ -52,6 +52,8 @@ The Atomia DNS database schema.
 sh /usr/share/atomiadns/atomiadns-database.postinst.sh
 
 %changelog
+* Thu Sep 05 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.68-1
+- Fix TSIG sync when zone/slavezone changes at the same time
 * Thu Sep 05 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.67-1
 - Fix TSIG name validation and reload domainmetadata on full reload of slavezones
 * Mon Jun 10 2024 Jimmy Bergman <jimmy@sigint.se> - 1.1.66-1
